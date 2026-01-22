@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildRight Solutions - We Nail It, You Enjoy It!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-brand">
+                <img src="images/logo.png" alt="BuildRight Solutions Logo" class="header-logo">
+                <div class="brand-text">
+                    <h1>BuildRight Solutions</h1>
+                    <p class="slogan">We Nail It, You Enjoy It!</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#previous-work">Previous Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="images/logo.png" alt="BuildRight Solutions Logo" class="hero-logo">
+            <h2>Welcome to <span class="highlight">BuildRight Solutions</span></h2>
+            <p>We're the nuts and bolts of the business! Specializing in high-quality construction and maintenance services in Johannesburg and surrounding areas.</p>
+            <button class="btn btn-quote" onclick="openQuoteModal()">Get a Quote</button>
+        </div>
+    </section>
+
+    <section id="service-areas" class="banner">
+        <div class="container">
+            <h2>Where do you need workers?</h2>
+            <p>Select your area in Gauteng for a tailored quote.</p>
+            <div class="area-selector">
+                <select id="areaSelect">
+                    <option value="">Select an area</option>
+                    <option value="Randburg">Randburg</option>
+                    <option value="Fourways">Fourways</option>
+                    <option value="Soweto">Soweto</option>
+                    <option value="Rosebank">Rosebank</option>
+                    <option value="Sandton">Sandton</option>
+                    <option value="Midrand">Midrand</option>
+                    <option value="Bryanston">Bryanston</option>
+                    <option value="Rivonia">Rivonia</option>
+                    <option value="Morningside">Morningside</option>
+                    <option value="Bedfordview">Bedfordview</option>
+                    <option value="Edenvale">Edenvale</option>
+                    <option value="Alberton">Alberton</option>
+                    <option value="Germiston">Germiston</option>
+                    <option value="Roodepoort">Roodepoort</option>
+                    <option value="Pretoria">Pretoria</option>
+                    <option value="Centurion">Centurion</option>
+                    <option value="Johannesburg CBD">Johannesburg CBD</option>
+                    <option value="Boksburg">Boksburg</option>
+                    <option value="Benoni">Benoni</option>
+                </select>
+                <button class="btn" onclick="openQuoteFromArea()">Get Quote for Selected Area</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-group">
+                    <h3>Core Services</h3>
+                    <ul>
+                        <li>Painting</li>
+                        <li>Tiling</li>
+                        <li>Plumbing</li>
+                        <li>Paving</li>
+                        <li>Building</li>
+                        <li>Partition</li>
+                        <li>Roofing</li>
+                        <li>Waterproofing</li>
+                    </ul>
+                </div>
+                <div class="service-group">
+                    <h3>Additional Services</h3>
+                    <ul>
+                        <li>Tiling & Paving</li>
+                        <li>Waterproofing</li>
+                        <li>Roofing & Windows</li>
+                        <li>Welding & Partitions</li>
+                        <li>Plumbing Services</li>
+                        <li>Building Installations</li>
+                        <li>Painting & Renovations</li>
+                        <li>Maintenance Work</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="services-tagline">We handle everything from small repairs to full renovations. Contact us for a quote!</p>
+        </div>
+    </section>
+
+    <section id="previous-work">
+        <div class="container">
+            <h2>Our Previous Work</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/previous_work/picture1.jpeg" alt="Previous Work 1">
+                </div>
+                <div class="slide fade">
+                    <img src="images/previous_work/picture2.jpeg" alt="Previous Work 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images/previous_work/picture3.jpeg" alt="Previous Work 3">
+                </div>
+                <div class="slide fade">
+                    <img src="images/previous_work/picture4.jpeg" alt="Previous Work 4">
+                </div>
+                <div class="slide fade">
+                    <img src="images/previous_work/picture5.jpeg" alt="Previous Work 5">
+                </div>
+                <div class="slide fade">
+                    <img src="images/previous_work/picture6.jpeg" alt="Previous Work 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>BuildRight Solutions is a premier, trusted provider of comprehensive construction and maintenance services in South Africa,Proudly based in Honeydew, Johannesburg, we're your go-to experts for top-tier construction and maintenance services across Gauteng and beyond. With over a decade of hands-on experience, our dedicated team of skilled professionals brings passion, precision, and innovation to every project. Whether it's expert painting, seamless tiling, reliable plumbing, durable paving, full-scale building, custom partitions, robust roofing, or advanced waterproofing, we handle it all – from minor repairs to major renovations – using sustainable materials and cutting-edge techniques to deliver results that last .</p>
+            <p>At BuildRight Solutions, customer satisfaction is at the heart of everything we do. We're committed to safety, efficiency, and completing jobs on time and within budget. As a Level 1 B-BBEE certified company, we champion broad-based black economic empowerment, driving inclusive growth, job creation, and community upliftment throughout South Africa. No matter where you are – from Randburg to Soweto, Sandton to Pretoria, or even further afield – we're ready to travel anytime to bring your vision to life.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Operating Hours:</strong><br> Mon - Thurs: 6am - 6pm<br> Friday: 8am - 4pm<br> Saturday: 8am - 2pm</p>
+            <p><strong>WhatsApp:</strong> 062 055 2382<br> <strong>Call:</strong> 066 402 8544<br> <strong>Email:</strong> <a href="mailto:buildright.solutions.agency@gmail.com">buildright.solutions.agency@gmail.com</a></p>
+            <p>Based in Johannesburg, Gauteng, ZA. We're here to help!</p>
+        </div>
+    </section>
+
+    <section id="partners">
+        <div class="container">
+            <h2>Our Partners</h2>
+            <p>We collaborate with top industry leaders to deliver the best results for our clients.</p>
+            <div class="partners-grid">
+                <img src="images/partners/pos-exchange-solutions.png" alt="Pos Exchange Solutions Logo" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="images/logo.png" alt="BuildRight Solutions Logo" class="footer-logo">
+            <p class="footer-company">BuildRight Solutions</p>
+            <p>&copy; 2026 BuildRight Solutions. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://x.com/Buildright_SA" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/people/Buildright-Solutions/61586778577221/?mibextid=wwXIfr&rdid=9zlg9KJL4xAjFvTk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1SrXoGCqw1%2F%3Fmibextid%3DwwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="floating-buttons">
+        <a href="https://wa.me/27620552382" target="_blank" class="float-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:buildright.solutions.agency@gmail.com" class="float-btn email">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+    </div>
+
+    <div id="quoteModal" class="modal">
+        <div class="modal-content-quote">
+            <span class="close" onclick="closeQuoteModal()">&times;</span>
+            <h2>Get a Quote</h2>
+            <form id="quoteForm">
+                <label for="service">Select Service:</label>
+                <select id="service" onchange="showQuestions()">
+                    <option value="">Choose a service</option>
+                    <option value="Painting">Painting</option>
+                    <option value="Tiling">Tiling</option>
+                    <option value="Plumbing">Plumbing</option>
+                    <option value="Paving">Paving</option>
+                    <option value="Building">Building</option>
+                    <option value="Partition">Partition</option>
+                    <option value="Roofing">Roofing</option>
+                    <option value="Waterproofing">Waterproofing</option>
+                    <option value="Tiling & Paving">Tiling & Paving</option>
+                    <option value="Roofing & Windows">Roofing & Windows</option>
+                    <option value="Welding & Partitions">Welding & Partitions</option>
+                    <option value="Plumbing Services">Plumbing Services</option>
+                    <option value="Building Installations">Building Installations</option>
+                    <option value="Painting & Renovations">Painting & Renovations</option>
+                    <option value="Maintenance Work">Maintenance Work</option>
+                </select>
+                <div id="questions" style="display: none; margin-top: 20px;"></div>
+                <label for="location">Where is the service required? (e.g., living room, kitchen, bathroom)</label>
+                <input type="text" id="location" placeholder="Enter location">
+                <label for="area">Area:</label>
+                <select id="area">
+                    <option value="">Select an area</option>
+                    <option value="Randburg">Randburg</option>
+                    <option value="Fourways">Fourways</option>
+                    <option value="Soweto">Soweto</option>
+                    <option value="Rosebank">Rosebank</option>
+                    <option value="Sandton">Sandton</option>
+                    <option value="Midrand">Midrand</option>
+                    <option value="Bryanston">Bryanston</option>
+                    <option value="Rivonia">Rivonia</option>
+                    <option value="Morningside">Morningside</option>
+                    <option value="Bedfordview">Bedfordview</option>
+                    <option value="Edenvale">Edenvale</option>
+                    <option value="Alberton">Alberton</option>
+                    <option value="Germiston">Germiston</option>
+                    <option value="Roodepoort">Roodepoort</option>
+                    <option value="Pretoria">Pretoria</option>
+                    <option value="Centurion">Centurion</option>
+                    <option value="Johannesburg CBD">Johannesburg CBD</option>
+                    <option value="Boksburg">Boksburg</option>
+                    <option value="Benoni">Benoni</option>
+                </select>
+                <label for="details">Additional Details:</label>
+                <textarea id="details" placeholder="Any other information?"></textarea>
+                <button type="button" class="btn" onclick="sendQuoteEmail()">Send Quote Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
